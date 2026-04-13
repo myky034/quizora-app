@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect } from "react";
 import { supabase } from "./lib/supabase";
 import { RouterProvider } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   useEffect(() => {
@@ -20,7 +21,12 @@ function App() {
     });
   }, []);
 
-  return <div>QUIZORA</div>;
+  return (
+    <>
+      <div>QUIZORA</div>
+      <Toaster position="top-right" />
+    </>
+  );
 
   //   <>
   //     <section id="center">
