@@ -4,8 +4,6 @@ import { router } from "@/routes/route";
 
 export default function App() {
   return (
-    <AppProvider>
-      <RouterProvider router={router} />
-    </AppProvider>
+    
   );
 }
